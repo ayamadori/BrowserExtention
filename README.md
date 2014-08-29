@@ -2,6 +2,7 @@ BrowserExtention
 ================
 
 A feature extention for Nokia Browser.
+http://store.ovi.com/content/573784
 
 Feature 
 --------- 
