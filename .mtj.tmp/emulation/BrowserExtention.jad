@@ -1,0 +1,11 @@
+MIDlet-1: BrowserExtention,/Puzzles.png,ayamadori.BrowserExtention
+MIDlet-Jar-Size: 211712
+MIDlet-Jar-URL: BrowserExtention.jar
+MIDlet-Name: BrowserExtention
+MIDlet-Permissions: javax.microedition.content.ContentHandler
+MIDlet-Vendor: ayamadori
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Handler-1: ayamadori.BrowserExtention, text/plain, , share open-shared,
+MicroEdition-Profile: MIDP-2.1
+Nokia-MIDlet-theme-modifier: dark

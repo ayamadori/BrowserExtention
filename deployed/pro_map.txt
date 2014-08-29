@@ -1,0 +1,388 @@
+ayamadori.About -> ayamadori.a:
+    javax.microedition.midlet.MIDlet midlet -> a
+    javax.microedition.lcdui.Command cmdBack -> b
+    javax.microedition.lcdui.Form window -> c
+    javax.microedition.lcdui.Displayable parent -> d
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+ayamadori.BrowserExtention -> ayamadori.BrowserExtention:
+    javax.microedition.lcdui.Display display -> a
+    javax.microedition.content.Invocation invocation -> b
+    javax.microedition.content.ContentHandlerServer handler -> c
+    ayamadori.ShareMenu menu -> d
+    boolean isLaunchByInvocation -> e
+    java.lang.String url -> f
+    org.tantalum.jme.RMSUtils pref -> g
+    javax.microedition.midlet.MIDlet midlet -> h
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+    org.tantalum.jme.RMSUtils access$0(ayamadori.BrowserExtention) -> a
+    javax.microedition.midlet.MIDlet access$1(ayamadori.BrowserExtention) -> b
+ayamadori.BrowserExtention$1 -> ayamadori.b:
+    ayamadori.BrowserExtention this$0 -> a
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+ayamadori.BrowserExtention$2 -> ayamadori.c:
+    ayamadori.BrowserExtention this$0 -> a
+    javax.microedition.lcdui.ChoiceGroup val$choice -> b
+    void itemStateChanged(javax.microedition.lcdui.Item) -> itemStateChanged
+ayamadori.BrowserExtention$3 -> ayamadori.d:
+    ayamadori.BrowserExtention this$0 -> a
+    javax.microedition.lcdui.Command val$exit -> b
+    javax.microedition.lcdui.Command val$about -> c
+    javax.microedition.lcdui.Form val$settingForm -> d
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+ayamadori.GoogleTranslateClient -> ayamadori.e:
+    java.lang.String[] LANGUAGE -> a
+    java.lang.String[] LANGUAGE_CODE -> b
+    java.lang.String getAccessURL(int,java.lang.String) -> a
+ayamadori.OneNoteClient -> ayamadori.f:
+    org.tantalum.jme.RMSUtils pref -> a
+    void setListener(javax.microedition.midlet.MIDlet) -> a
+    void invocationResponseNotify(javax.microedition.content.Registry) -> invocationResponseNotify
+    org.tantalum.jme.RMSUtils access$1(ayamadori.OneNoteClient) -> a
+ayamadori.OneNoteClient$5 -> ayamadori.g:
+    ayamadori.OneNoteClient this$0 -> c
+    org.tantalum.net.HttpPoster val$poster -> d
+    java.lang.Object exec(java.lang.Object) -> a
+ayamadori.ShareMenu -> ayamadori.h:
+    javax.microedition.midlet.MIDlet midlet -> a
+    javax.microedition.lcdui.Display display -> b
+    java.lang.String text -> c
+    javax.microedition.lcdui.List shareList -> d
+    javax.microedition.lcdui.Command back -> e
+    javax.microedition.lcdui.Alert errorMessageAlert -> f
+    ayamadori.GoogleTranslateClient googleClient -> g
+    org.tantalum.jme.RMSUtils pref -> h
+    int index -> i
+    void openBrowserMenu() -> a
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+    void launch(java.lang.String) -> a
+org.json.me.JSONArray -> a:
+    java.util.Vector myArrayList -> a
+    java.lang.String join(java.lang.String) -> a
+    java.lang.String toString() -> toString
+org.json.me.JSONException -> b:
+org.json.me.JSONObject -> c:
+    java.util.Hashtable myHashMap -> b
+    java.lang.Object NULL -> a
+    java.lang.String getString(java.lang.String) -> a
+    java.lang.String quote(java.lang.String) -> b
+    void testValidity(java.lang.Object) -> b
+    java.lang.String toString() -> toString
+    java.lang.String valueToString(java.lang.Object) -> a
+org.json.me.JSONObject$Null -> d:
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+org.json.me.JSONString -> e:
+    java.lang.String toJSONString() -> a
+org.json.me.JSONTokener -> f:
+    int myIndex -> a
+    java.lang.String mySource -> b
+    void back() -> a
+    char next() -> b
+    java.lang.String next(int) -> a
+    char nextClean() -> c
+    java.lang.Object nextValue() -> d
+    org.json.me.JSONException syntaxError(java.lang.String) -> a
+    java.lang.String toString() -> toString
+org.tantalum.CancellationException -> g:
+org.tantalum.PlatformAdapter -> h:
+    void init(int) -> a
+    void runOnUiThread(java.lang.Runnable) -> a
+    void shutdownComplete() -> a
+    org.tantalum.util.L getLog() -> b
+    org.tantalum.PlatformUtils$HttpConn getHttpConn(java.lang.String,java.util.Vector,java.util.Vector,byte[],java.lang.String) -> a
+org.tantalum.PlatformUtils -> i:
+    org.tantalum.PlatformAdapter platformAdapter -> b
+    int numberOfWorkers -> c
+    java.lang.Object program -> d
+    java.lang.Thread uiThread -> a
+    java.lang.Object MUTEX -> e
+    boolean shutdownComplete -> f
+    java.lang.Class class$org$tantalum$PlatformUtils -> g
+    org.tantalum.PlatformUtils getInstance() -> a
+    boolean setProgram(java.lang.Object,int) -> a
+    boolean setProgram(java.lang.Object,int,int) -> a
+    java.lang.Object getProgram() -> b
+    void init(int) -> a
+    boolean isUIThread() -> c
+    void shutdownComplete(java.lang.String) -> a
+    org.tantalum.util.L getLog() -> d
+    void runOnUiThread(java.lang.Runnable) -> a
+    org.tantalum.PlatformUtils$HttpConn getHttpGetConn(java.lang.String,java.util.Vector,java.util.Vector) -> a
+    org.tantalum.PlatformUtils$HttpConn getHttpPostConn(java.lang.String,java.util.Vector,java.util.Vector,byte[]) -> a
+    void shutdown(java.lang.String) -> b
+    java.lang.String responseHeadersToString(java.util.Hashtable) -> a
+    java.lang.Class class$(java.lang.String) -> c
+org.tantalum.PlatformUtils$1 -> j:
+    org.tantalum.PlatformUtils this$0 -> a
+    void run() -> run
+org.tantalum.PlatformUtils$3 -> k:
+    java.lang.String val$reason -> c
+    java.lang.Object exec(java.lang.Object) -> a
+org.tantalum.PlatformUtils$HttpConn -> l:
+    java.io.InputStream getInputStream() -> a
+    java.io.OutputStream getOutputStream() -> b
+    int getResponseCode() -> c
+    void getResponseHeaders(java.util.Hashtable) -> a
+    long getLength() -> d
+    void close() -> e
+org.tantalum.PlatformUtils$PlatformUtilsHolder -> m:
+    org.tantalum.PlatformUtils instance -> a
+    org.tantalum.PlatformUtils access$100() -> a
+org.tantalum.Task -> n:
+    java.lang.String[] STATUS_STRINGS -> c
+    java.lang.Object value -> d
+    int status -> a
+    org.tantalum.Task chainedTask -> e
+    int forkPriority -> f
+    java.lang.Object mutex -> g
+    java.lang.Thread timerThread -> b
+    org.tantalum.Task previousTaskInChain -> h
+    java.lang.String anonInnerClassName -> i
+    java.lang.String[] PRIORITY_STRINGS -> j
+    boolean isTimerThread() -> a
+    boolean isShuttingDown() -> b
+    java.util.Timer getTimer() -> c
+    java.lang.Object getValue() -> d
+    org.tantalum.Task set(java.lang.Object) -> b
+    org.tantalum.Task fork() -> e
+    int getStatus() -> f
+    java.lang.String getStatusString() -> k
+    void doSetStatus(int,java.lang.String) -> a
+    org.tantalum.Task chain(org.tantalum.Task) -> a
+    int getForkPriority() -> g
+    java.lang.Object executeTask(java.lang.Object) -> c
+    java.lang.Object exec(java.lang.Object) -> a
+    boolean cancel(java.lang.String) -> a
+    boolean cancel(java.lang.String,java.lang.Throwable) -> a
+    boolean doCancel$5caa6b0b(java.lang.String,java.lang.Throwable) -> b
+    void onCanceled(java.lang.String) -> b
+    boolean isCanceled() -> h
+    java.lang.String getClassName(java.lang.Object) -> d
+    java.lang.String getClassName() -> i
+    org.tantalum.Task setClassName(java.lang.String) -> c
+    java.lang.String getPriorityString() -> j
+    java.lang.String toString() -> toString
+    java.lang.String showChain() -> l
+    java.lang.String toString(boolean) -> a
+org.tantalum.Task$1 -> o:
+    java.lang.String val$reason -> a
+    org.tantalum.Task this$0 -> b
+    void run() -> run
+org.tantalum.Task$ChainSplitter -> p:
+    java.util.Vector tasksToFork -> c
+    void addSplit(org.tantalum.Task) -> b
+    java.lang.Object exec(java.lang.Object) -> a
+    void onCanceled(java.lang.String) -> b
+    java.lang.String toString() -> toString
+org.tantalum.Task$TimerHolder -> q:
+    java.util.Timer timer -> a
+org.tantalum.Task$TimerHolder$1 -> r:
+    void run() -> run
+org.tantalum.Worker -> s:
+    java.util.Vector q -> c
+    java.util.Vector dedicatedThreads -> d
+    org.tantalum.Worker[] workers -> e
+    java.util.Vector serialQ -> f
+    java.util.Vector fastlaneQ -> g
+    java.util.Vector shutdownUI_Q -> h
+    java.util.Vector idleQ -> i
+    java.util.Vector shutdownQ -> j
+    boolean shuttingDown -> a
+    boolean shutdownComplete -> k
+    org.tantalum.Task currentTask -> l
+    boolean isDedicatedFastlaneWorker -> m
+    boolean threadDeath -> n
+    java.lang.Class class$org$tantalum$Worker$DedicatedThread -> b
+    void init(int) -> a
+    boolean isShuttingDown() -> a
+    void forkToUIThread(org.tantalum.Task) -> c
+    org.tantalum.Task cancelTasksAboveMaxQueueSize(java.util.Vector) -> a
+    org.tantalum.Task fork(org.tantalum.Task) -> a
+    void shutdown(java.lang.String) -> a
+    void runShutdownTasks(java.lang.String) -> c
+    boolean dequeue(org.tantalum.Task) -> b
+    void run() -> run
+    org.tantalum.Task getSerialTask() -> e
+    org.tantalum.Task getNormalRunTask() -> f
+    org.tantalum.Task getShutdownTask() -> g
+    java.lang.String toStringWorkers() -> h
+    org.tantalum.Worker[] access$000() -> b
+    boolean access$100(org.tantalum.Worker) -> a
+    java.lang.Class class$(java.lang.String) -> b
+    java.util.Vector access$400() -> c
+    java.util.Vector access$500() -> d
+org.tantalum.Worker$1 -> t:
+    org.tantalum.Task val$task -> a
+    void run() -> run
+org.tantalum.Worker$2 -> u:
+    org.tantalum.Task val$t -> a
+    java.lang.String val$reason -> b
+    void run() -> run
+org.tantalum.Worker$3 -> v:
+    java.lang.String val$reason -> a
+    void run() -> run
+org.tantalum.Worker$4 -> w:
+    java.lang.Thread val$shutdownThread -> a
+    java.lang.String val$reason -> b
+    void run() -> run
+org.tantalum.Worker$DedicatedThread -> x:
+    org.tantalum.Worker$DedicatedThread prebuildDedicatedThread -> b
+    org.tantalum.Task task -> c
+    java.util.Vector serialQ -> a
+    int dedicatedThreadCounter -> d
+    org.tantalum.Worker$DedicatedThread getDedicatedThread() -> a
+    void run() -> run
+    org.tantalum.Worker$DedicatedThread access$200() -> b
+    org.tantalum.Worker$DedicatedThread access$202(org.tantalum.Worker$DedicatedThread) -> a
+org.tantalum.Worker$DedicatedThread$1 -> y:
+    java.lang.Object exec(java.lang.Object) -> a
+org.tantalum.jme.JMELog -> z:
+org.tantalum.jme.JMEPlatformAdapter -> aa:
+    javax.microedition.lcdui.Display display -> a
+    org.tantalum.util.L log -> b
+    void init(int) -> a
+    void runOnUiThread(java.lang.Runnable) -> a
+    void shutdownComplete() -> a
+    org.tantalum.PlatformUtils$HttpConn getHttpConn(java.lang.String,java.util.Vector,java.util.Vector,byte[],java.lang.String) -> a
+    org.tantalum.util.L getLog() -> b
+org.tantalum.jme.JMEPlatformAdapter$JMEHttpConn -> ab:
+    javax.microedition.io.HttpConnection httpConnection -> a
+    java.io.InputStream is -> b
+    java.io.OutputStream os -> c
+    java.io.InputStream getInputStream() -> a
+    java.io.OutputStream getOutputStream() -> b
+    int getResponseCode() -> c
+    void getResponseHeaders(java.util.Hashtable) -> a
+    long getLength() -> d
+    void close() -> e
+org.tantalum.jme.RMSUtils -> ac:
+    org.tantalum.jme.RMSUtils getInstance() -> a
+    void write(java.lang.String,byte[]) -> a
+    void close(java.lang.String,javax.microedition.rms.RecordStore) -> a
+    byte[] read(java.lang.String) -> a
+    javax.microedition.rms.RecordStore getRecordStore(java.lang.String,boolean) -> a
+    java.lang.String truncateRecordStoreNameToLast32(java.lang.String) -> b
+org.tantalum.jme.RMSUtils$RMSUtilsHolder -> ad:
+    org.tantalum.jme.RMSUtils instance -> a
+    org.tantalum.jme.RMSUtils access$100() -> a
+org.tantalum.net.HttpGetter -> ae:
+    org.tantalum.util.RollingAverage averageResponseDelayMillis -> d
+    org.tantalum.util.WeakReferenceListenerHandler netActivityListenerDelegate -> e
+    org.tantalum.util.RollingAverage averageBaud -> f
+    long nextHeaderStartTime -> g
+    int retriesRemaining -> h
+    byte[] postMessage -> c
+    java.util.Hashtable responseHeaders -> i
+    java.util.Vector requestPropertyKeys -> j
+    java.util.Vector requestPropertyValues -> k
+    int downstreamDataCount -> l
+    int upstreamDataCount -> m
+    java.lang.String userAgent -> n
+    org.tantalum.net.StreamReader streamWriter$73ffc474 -> o
+    org.tantalum.net.StreamReader streamReader -> p
+    int responseCode -> q
+    long startTime -> r
+    int netActivityState -> s
+    int netActivityListenerInactiveTimeout -> t
+    int netActivityListenerKeepaliveTimeout -> u
+    long nextNetInactiveTimeout -> v
+    long nextNetKeepaliveTimeout -> w
+    java.util.TimerTask netActivityInactiveTimerTask -> x
+    java.util.TimerTask netActivityKeepaliveTimerTask -> y
+    org.tantalum.util.WeakHashCache networkActivityActorsHash -> z
+    java.lang.Runnable uiThreadNetworkStateChange -> A
+    java.lang.Class class$org$tantalum$net$HttpGetter$NetActivityListener -> B
+    java.lang.String getUserAgent() -> u
+    long staggerHeaderStartTime() -> v
+    int getResponseCode() -> k
+    void setRequestProperty(java.lang.String,java.lang.String) -> a
+    java.lang.Object exec(java.lang.Object) -> a
+    boolean cancel(java.lang.String,java.lang.Throwable) -> a
+    long readBytesFixedLength(java.lang.String,java.io.InputStream,byte[]) -> a
+    void prematureEOF(java.lang.String,int,int) -> a
+    long readBytesVariableLength(java.io.InputStream,java.io.OutputStream,java.lang.Integer) -> a
+    void addDownstreamDataCount(int) -> b
+    void addUpstreamDataCount(int) -> c
+    java.lang.String toString() -> toString
+    int getCurrentNetActivityState() -> w
+    void conditionalStartInactiveTimer() -> x
+    void networkActivity(java.lang.Integer) -> a
+    void endNetworkActivity(java.lang.Integer) -> b
+    java.lang.Class class$(java.lang.String) -> d
+    int access$000() -> l
+    int access$100() -> m
+    java.util.TimerTask access$200() -> n
+    java.util.TimerTask access$202(java.util.TimerTask) -> a
+    int access$102(int) -> a
+    long access$302(long) -> a
+    long access$300() -> o
+    java.lang.Runnable access$400() -> p
+    int access$500() -> q
+    org.tantalum.util.WeakReferenceListenerHandler access$600() -> r
+    java.util.TimerTask access$702(java.util.TimerTask) -> b
+    long access$800() -> s
+    void access$900() -> t
+org.tantalum.net.HttpGetter$1 -> af:
+    void run() -> run
+    void notifyListeners(int) -> a
+org.tantalum.net.HttpGetter$1$1 -> ag:
+    void run() -> run
+org.tantalum.net.HttpGetter$2 -> ah:
+    void run() -> run
+org.tantalum.net.HttpGetter$NetActivityListener -> ai:
+org.tantalum.net.HttpPoster -> aj:
+    java.lang.String url -> d
+    boolean isChainInputPostData -> e
+    org.tantalum.net.HttpPoster setPostData(byte[]) -> a
+    java.lang.Object exec(java.lang.Object) -> a
+org.tantalum.net.StreamReader -> ak:
+org.tantalum.net.json.JSONModel -> al:
+    org.json.me.JSONObject jsonObject -> a
+    void setJSON(java.lang.String) -> b
+    java.lang.String getString(java.lang.String) -> a
+org.tantalum.util.L -> am:
+    long startTime -> a
+    java.lang.Class class$org$tantalum$util$L -> b
+    void i(java.lang.Object,java.lang.String,java.lang.String) -> a
+    void i(java.lang.String,java.lang.String) -> a
+    void e(java.lang.Object,java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    void e(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    java.lang.StringBuffer getMessage(java.lang.Object,boolean,java.lang.String,java.lang.String) -> a
+    void shutdown() -> a
+    java.lang.Class class$(java.lang.String) -> a
+org.tantalum.util.LOR -> an:
+    java.lang.Object largeObject -> a
+    byte[] getBytes() -> a
+    java.lang.String toString() -> toString
+org.tantalum.util.RollingAverage -> ao:
+    float average -> a
+    int windowLength -> b
+    int window -> c
+    float upperBound -> d
+    float lowerBound -> e
+    void setUpperBound(float) -> a
+    void setLowerBound(float) -> b
+    float value() -> a
+    float update(float) -> c
+org.tantalum.util.StringUtils -> ap:
+    char[] HEX_CHARS -> a
+    java.lang.String urlEncode(java.lang.String) -> a
+    void appendTaggedHex(int,java.lang.StringBuffer) -> a
+org.tantalum.util.WeakHashCache -> aq:
+    java.util.Hashtable hash -> a
+    java.util.Vector purgeList -> b
+    java.lang.Object get(java.lang.Object) -> c
+    void put(java.lang.Object,java.lang.Object) -> a
+    boolean remove(java.lang.Object) -> a
+    boolean containsKey(java.lang.Object) -> b
+    int size() -> a
+    int purgeExpiredWeakReferences() -> b
+org.tantalum.util.WeakReferenceListenerHandler -> ar:
+    java.lang.Object[] NO_LISTENERS_REGISTERED -> a
+    java.util.Vector listeners -> b
+    boolean listenersAreRegistered -> c
+    boolean isEmpty() -> a
+    java.lang.Object[] getAllListeners() -> b
