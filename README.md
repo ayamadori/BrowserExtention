@@ -18,7 +18,7 @@ Version History
 * 1.0 Initial release
 
 
-Use of Nokia APIs
+Use of Nokia APIs and plug-ins
 --------------------
 * Share API
 * Tantalum plug-in
