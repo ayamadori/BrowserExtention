@@ -13,11 +13,6 @@ Notice
 -------- 
 * Above feature can be used from [Share] menu only.
 
-Version History 
------------------- 
-* 1.0 Initial release
-
-
 Use of Nokia APIs and plug-ins
 --------------------
 * Share API
