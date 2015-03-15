@@ -49,7 +49,7 @@ public class ShareMenu implements CommandListener {
 	
 	public void openBrowserMenu(){
 		try {
-			shareList = new List("BrowserExtention", List.IMPLICIT);
+			shareList = new List("Action", List.IMPLICIT);
 //			shareList.append("Clip to OneNote", Image.createImage("/icon/onenote.png"));
 			shareList.append("Translate", Image.createImage("/icon/google_translate.png"));
 			shareList.append("Mobile view", Image.createImage("/icon/google.png"));

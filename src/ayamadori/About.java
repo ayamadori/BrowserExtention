@@ -10,9 +10,9 @@ import javax.microedition.midlet.MIDlet;
 public class About implements CommandListener {
 	
 	private final String TEXT =
-			"BrowserExtention\n" +
+			"URLTranslator\n" +
 			"\n" +
-			"Version 1.0.0\n" +
+			"Version 1.1.0\n" +
 			"\n" +
 			"Copyright (c) ayamadori all rights reserved.\n" +
 			"<https://sites.google.com/site/ayamadori/>\n";

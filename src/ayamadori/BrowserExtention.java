@@ -18,6 +18,7 @@ import javax.microedition.lcdui.ItemCommandListener;
 import javax.microedition.lcdui.ItemStateListener;
 import javax.microedition.lcdui.Spacer;
 import javax.microedition.lcdui.StringItem;
+import javax.microedition.lcdui.TextField;
 import javax.microedition.lcdui.Ticker;
 import javax.microedition.midlet.MIDlet;
 import javax.microedition.midlet.MIDletStateChangeException;
@@ -38,6 +39,7 @@ public class BrowserExtention extends MIDlet {
     private String url;
 	private RMSUtils pref;
 	private MIDlet midlet = this;
+	private TextField urlField;
     
 	public BrowserExtention() {
 		// TODO Auto-generated constructor stub
@@ -108,7 +110,7 @@ public class BrowserExtention extends MIDlet {
         		final OneNoteClient client = new OneNoteClient();
         		client.setListener(this);
         		
-        		final Form settingForm = new Form("BrowserExtention");
+        		final Form settingForm = new Form("URLTranslator");
 
 //            	StringItem authButton = new StringItem("Microsoft Account", "Authenticate", Item.BUTTON);
 //            	authButton.setDefaultCommand(new Command("Authenticate", Command.ITEM, 0));
@@ -142,15 +144,29 @@ public class BrowserExtention extends MIDlet {
 				});
 //              	settingForm.setTicker(new Ticker("This app can be used in [Share] menu only"));
             	settingForm.append(new Spacer(0, 30));
-            	settingForm.append(new StringItem("**NOTICE**", "This app can be used in [Share] menu only."));
+//            	settingForm.append(new StringItem("**NOTICE**", "This app can be used in [Share] menu only."));
+            	urlField = new TextField("Enter URL", null, 100, TextField.URL);
+            	settingForm.append(urlField);
             	
             	final Command exit = new Command("Exit", Command.EXIT, 3);
-              	final Command about = new Command("About", Command.OK, 1);
+            	final Command go = new Command("Go", Command.OK, 1);
+              	final Command about = new Command("About", Command.OK, 2);             	
               	settingForm.addCommand(exit);
+              	settingForm.addCommand(go);
               	settingForm.addCommand(about);
 				settingForm.setCommandListener(new CommandListener() {
 					public void commandAction(Command c, Displayable d) {
-						if (c == exit) {
+						if (c == go) {
+							url = urlField.getString();
+							if(url.startsWith("http")) {
+			            		menu = new ShareMenu(midlet, url);
+			            		menu.openBrowserMenu();
+			            	} else {
+			            		Alert al = new Alert("Info", "Invalid URL", null, AlertType.WARNING);
+			            		al.addCommand(new Command("Back", Command.BACK, 0));
+			            		display.setCurrent(al);            		
+			            	}
+						} else if (c == exit) {
 							System.out.println("Destroyed-->");
 							// PlatformUtils.getInstance().shutdown(false, "Shutting down.");
 							PlatformUtils.getInstance().shutdown("Shutting down.");

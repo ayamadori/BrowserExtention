@@ -1,9 +1,9 @@
-MIDlet-1: BrowserExtention,/Puzzles.png,ayamadori.BrowserExtention
-MIDlet-Jar-URL: BrowserExtention.jar
+MIDlet-1: URLTranslator,/Puzzles.png,ayamadori.BrowserExtention
+MIDlet-Jar-URL: URLTranslator.jar
 MicroEdition-Handler-1: ayamadori.BrowserExtention, text/plain, , share open-shared,
 MicroEdition-Configuration: CLDC-1.0
-MIDlet-Version: 1.0.0
-MIDlet-Name: BrowserExtention
+MIDlet-Version: 1.1.0
+MIDlet-Name: URLTranslator
 MIDlet-Vendor: ayamadori
 MIDlet-Permissions: javax.microedition.content.ContentHandler
 MicroEdition-Profile: MIDP-2.1

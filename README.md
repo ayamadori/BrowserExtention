@@ -1,17 +1,14 @@
-BrowserExtention 
-================
+BrowserExtention (now URLTranslator)
+=====================================
 
-A feature extention for Nokia Browser.
-http://store.ovi.com/content/573784
+A translator for website.
+http://nokia-asha-230-dual-sim.sigma.apps.opera.com/en_us/browserextention.html
 
 Feature 
 --------- 
 * Translate website 
 * Convert website to Mobile View
-
-Notice 
--------- 
-* Above feature can be used from [Share] menu only.
+* Use from [Share] menu
 
 Use of Nokia APIs and plug-ins
 --------------------
@@ -29,4 +26,5 @@ http://www.gnu.org/licenses/gpl-3.0.html
 
 Version history
 ------------------
-* 1.0 Initial release.
+* 1.1.0 Apply to the migration from Nokia Store to Opera Mobile Store
+* 1.0.0 Initial release.

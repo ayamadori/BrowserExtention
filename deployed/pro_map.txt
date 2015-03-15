@@ -13,11 +13,18 @@ ayamadori.BrowserExtention -> ayamadori.BrowserExtention:
     java.lang.String url -> f
     org.tantalum.jme.RMSUtils pref -> g
     javax.microedition.midlet.MIDlet midlet -> h
+    javax.microedition.lcdui.TextField urlField -> i
     void destroyApp(boolean) -> destroyApp
     void pauseApp() -> pauseApp
     void startApp() -> startApp
     org.tantalum.jme.RMSUtils access$0(ayamadori.BrowserExtention) -> a
-    javax.microedition.midlet.MIDlet access$1(ayamadori.BrowserExtention) -> b
+    javax.microedition.lcdui.TextField access$1(ayamadori.BrowserExtention) -> b
+    void access$2(ayamadori.BrowserExtention,java.lang.String) -> a
+    java.lang.String access$3(ayamadori.BrowserExtention) -> c
+    javax.microedition.midlet.MIDlet access$4(ayamadori.BrowserExtention) -> d
+    void access$5(ayamadori.BrowserExtention,ayamadori.ShareMenu) -> a
+    ayamadori.ShareMenu access$6(ayamadori.BrowserExtention) -> e
+    javax.microedition.lcdui.Display access$7(ayamadori.BrowserExtention) -> f
 ayamadori.BrowserExtention$1 -> ayamadori.b:
     ayamadori.BrowserExtention this$0 -> a
     void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
@@ -27,9 +34,10 @@ ayamadori.BrowserExtention$2 -> ayamadori.c:
     void itemStateChanged(javax.microedition.lcdui.Item) -> itemStateChanged
 ayamadori.BrowserExtention$3 -> ayamadori.d:
     ayamadori.BrowserExtention this$0 -> a
-    javax.microedition.lcdui.Command val$exit -> b
-    javax.microedition.lcdui.Command val$about -> c
-    javax.microedition.lcdui.Form val$settingForm -> d
+    javax.microedition.lcdui.Command val$go -> b
+    javax.microedition.lcdui.Command val$exit -> c
+    javax.microedition.lcdui.Command val$about -> d
+    javax.microedition.lcdui.Form val$settingForm -> e
     void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
 ayamadori.GoogleTranslateClient -> ayamadori.e:
     java.lang.String[] LANGUAGE -> a
