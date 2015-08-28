@@ -1,8 +1,8 @@
-BrowserExtention (now URLTranslator)
+BrowserExtention (now call URLTranslator)
 =====================================
 
 A translator for website.   
-http://nokia-asha-230-dual-sim.sigma.apps.opera.com/en_us/browserextention.html
+http://ovi.sigma.apps.opera.com/en_us/browserextention.html
 
 Feature 
 --------- 
