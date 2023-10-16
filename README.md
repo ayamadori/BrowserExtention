@@ -20,7 +20,7 @@ Tested on Nokia Asha SDK 1.1 & 1.2(beta) and Asha 230.
 
 License
 ----------
-GNU GENERAL PUBLIC LICENSE Version 3
+GNU GENERAL PUBLIC LICENSE Version 3    
 http://www.gnu.org/licenses/gpl-3.0.html
 
 Version history
