@@ -1,8 +1,7 @@
 BrowserExtention (now call URLTranslator)
 =====================================
 
-A translator for website.   
-http://ovi.sigma.apps.opera.com/en_us/browserextention.html
+A helper for website for Nokia Asha Platform.   
 
 Feature 
 --------- 
@@ -17,7 +16,7 @@ Use of Nokia APIs and plug-ins
 
 Test
 -------
-Tested on Nokia Asha SDK 1.1 & 1.2(beta).
+Tested on Nokia Asha SDK 1.1 & 1.2(beta) and Asha 230.
 
 License
 ----------
