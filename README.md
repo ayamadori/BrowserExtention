@@ -1,7 +1,7 @@
 BrowserExtention (now call URLTranslator)
 =====================================
 
-A helper for website for Nokia Asha Platform.   
+A website helper for Nokia Asha Platform.   
 
 Feature 
 --------- 
