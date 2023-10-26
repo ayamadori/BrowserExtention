@@ -1,7 +1,8 @@
 BrowserExtention (now call URLTranslator)
 =====================================
-
+![BrowserExtention_SS1-192x192.png](/BrowserExtention_SS1-192x192.png)    
 A website helper for Nokia Asha Platform.   
+
 
 Feature 
 --------- 
